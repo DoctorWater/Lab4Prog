@@ -19,6 +19,8 @@ namespace lab {
     void lab::Triangle::initFromDialog() {
         cout << "Введите длину стороны" << endl;
         cin >> this->side;
+        cout << "Введите массу объекта" <<endl;
+        cin >> this->massVar;
     }
 
     double lab::Triangle::square() {

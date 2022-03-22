@@ -61,6 +61,18 @@ build CMakeFiles/Laba4Prog.dir/Triangle.cpp.obj: CXX_COMPILER__Laba4Prog_Debug D
   OBJECT_DIR = CMakeFiles\Laba4Prog.dir
   OBJECT_FILE_DIR = CMakeFiles\Laba4Prog.dir
 
+build CMakeFiles/Laba4Prog.dir/Parallelogram.cpp.obj: CXX_COMPILER__Laba4Prog_Debug D$:/Projects/Laba4Prog/Parallelogram.cpp || cmake_object_order_depends_target_Laba4Prog
+  DEP_FILE = CMakeFiles\Laba4Prog.dir\Parallelogram.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\Laba4Prog.dir
+  OBJECT_FILE_DIR = CMakeFiles\Laba4Prog.dir
+
+build CMakeFiles/Laba4Prog.dir/Menu.cpp.obj: CXX_COMPILER__Laba4Prog_Debug D$:/Projects/Laba4Prog/Menu.cpp || cmake_object_order_depends_target_Laba4Prog
+  DEP_FILE = CMakeFiles\Laba4Prog.dir\Menu.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\Laba4Prog.dir
+  OBJECT_FILE_DIR = CMakeFiles\Laba4Prog.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Laba4Prog
@@ -69,7 +81,7 @@ build CMakeFiles/Laba4Prog.dir/Triangle.cpp.obj: CXX_COMPILER__Laba4Prog_Debug D
 #############################################
 # Link the executable Laba4Prog.exe
 
-build Laba4Prog.exe: CXX_EXECUTABLE_LINKER__Laba4Prog_Debug CMakeFiles/Laba4Prog.dir/main.cpp.obj CMakeFiles/Laba4Prog.dir/Triangle.cpp.obj
+build Laba4Prog.exe: CXX_EXECUTABLE_LINKER__Laba4Prog_Debug CMakeFiles/Laba4Prog.dir/main.cpp.obj CMakeFiles/Laba4Prog.dir/Triangle.cpp.obj CMakeFiles/Laba4Prog.dir/Parallelogram.cpp.obj CMakeFiles/Laba4Prog.dir/Menu.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Laba4Prog.dir

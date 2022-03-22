@@ -2,8 +2,8 @@
 // Created by malck on 22.03.2022.
 //
 
-#ifndef LABA4PROG_TRIANGLE_H
-#define LABA4PROG_TRIANGLE_H
+#ifndef LABA4PROG_PARALLELOGRAM_H
+#define LABA4PROG_PARALLELOGRAM_H
 
 #include "IPhysObject.h"
 #include "IGeoFig.h"
@@ -13,19 +13,24 @@
 #include "BaseCertainForm.h"
 
 namespace lab {
-    class Triangle: public IPhysObject, public IDialogInitiable, public BaseCertainForm{
+
+    class Parallelogram
+            : public IPhysObject, public IDialogInitiable,  public BaseCertainForm {
     private:
-        double side;
-        double massVar;
+        double massVar, a, b, angle;
     public:
-        Triangle(){
-            this->side=1;
-            this->massVar=0.1;
+        Parallelogram() {
+            this->massVar = 0.1;
+            this->a = 1;
+            this->b = 1;
         }
-        Triangle(double Side, double Mass){
-            this->side=Side;
-            this->massVar=Mass;
+
+        Parallelogram(double massVar, double a, double b) {
+            this->massVar = massVar;
+            this->a = a;
+            this->b = b;
         }
+
         const char *classname() override;
 
         unsigned int size() override;
@@ -40,7 +45,7 @@ namespace lab {
 
         Vector2D position() override;
 
-        bool operator ==(const IPhysObject &ob) const override;
+        bool operator==(const IPhysObject &ob) const override;
 
         bool operator<(const IPhysObject &ob) const override;
 
@@ -48,4 +53,4 @@ namespace lab {
     };
 }
 
-#endif //LABA4PROG_TRIANGLE_H
+#endif //LABA4PROG_PARALLELOGRAM_H
